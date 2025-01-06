@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tomoportfolio/static/css/main.69c108aa.css",
+    "main.js": "/tomoportfolio/static/js/main.3bd88aca.js",
+    "static/js/488.9561f9b8.chunk.js": "/tomoportfolio/static/js/488.9561f9b8.chunk.js",
+    "index.html": "/tomoportfolio/index.html",
+    "main.69c108aa.css.map": "/tomoportfolio/static/css/main.69c108aa.css.map",
+    "main.3bd88aca.js.map": "/tomoportfolio/static/js/main.3bd88aca.js.map",
+    "488.9561f9b8.chunk.js.map": "/tomoportfolio/static/js/488.9561f9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69c108aa.css",
+    "static/js/main.3bd88aca.js"
+  ]
+}
