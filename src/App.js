@@ -1,17 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <ul className="navbar">
-          <li><Link to="/">Project</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-        </ul>
+        <nav className="App-nav">
+          <ul>
+            <li>
+              <Link to="/">Projects</Link>
+            </li>
+            <li>
+              <Link to="/resume">Resume</Link>
+            </li>
+          </ul>
+        </nav>
         <Routes>
-          <Route path="/" element={<Project />} />
+          <Route path="/" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/project1" element={<Project1 />} />
           <Route path="/project2" element={<Project2 />} />
@@ -24,26 +30,19 @@ function App() {
   );
 }
 
-function Project() {
+function Projects() {
   return (
-    <div>
+    <div className="App-content">
       <h1>Tomo's Portfolio</h1>
-      <div className="scroll-container">
-        <Link to="/project1" className="scroll-item">Project #1 soon...</Link>
-        <Link to="/project2" className="scroll-item">Project #2 soon...</Link>
-        <Link to="/project3" className="scroll-item">Project #3 soon...</Link>
-        <Link to="/project4" className="scroll-item">Project #4 soon...</Link>
-        <Link to="/project5" className="scroll-item">Project #5 soon...</Link>
-      </div>
     </div>
   );
 }
 
 function Resume() {
   return (
-    <div>
+    <div className="App-content">
       <h1>Resume</h1>
-      <p>This is the resume page.</p>
+      <p>Here you can add your resume content.</p>
     </div>
   );
 }
